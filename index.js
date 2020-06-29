@@ -1,9 +1,9 @@
 'use strict';
 
-let userNumber = Number(prompt('Enter the number'));
-let result = userNumber;
+let userNumber;
 
-while (--userNumber > 1) {
-    result *= userNumber;
+do {
+    userNumber = Number(prompt('2 + 2 * 2 ='));
 }
-alert(result);
+while (!(userNumber === 6));
+alert('Game over!');
