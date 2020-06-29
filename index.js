@@ -1,9 +1,11 @@
 'use strict';
 
-let userNumber;
+let number = 1000;
+let count = 0;
 
 do {
-    userNumber = Number(prompt('2 + 2 * 2 ='));
+    number /= 2;
+    count++;
 }
-while (!(userNumber === 6));
-alert('Game over!');
+while (number >= 50);
+alert(`number = ${number}\ncount = ${count}`);
