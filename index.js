@@ -1,14 +1,9 @@
 'use strict';
 
-const firstNumber = Number(prompt('Enter first number'));
-const secondNumber = Number(prompt('Enter second number'));
-let i = 1, result = 0;
+let userNumber = Number(prompt('Enter the number'));
+let result = userNumber;
 
-
-while (firstNumber >= i && secondNumber >= i) {
-    if (!(firstNumber % i) && !(secondNumber % i)) {
-        result++;
-    }
-    i++;
+while (--userNumber > 1) {
+    result *= userNumber;
 }
 alert(result);
