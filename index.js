@@ -1,8 +1,16 @@
 'use strict';
 
-let userValue = Number(prompt('Enter the number'));
+const userNumber = Number(prompt('Enter the number'));
+let userPower = Number(prompt('Enter the power'));
+let result = 1;
 
-while (userValue) {
-    userValue > 0 ? alert(userValue--) : alert(userValue++);
+while (userPower) {
+    if (userPower > 0) {
+        result *= userNumber;
+        userPower--;
+    } else {
+        result /= userNumber;
+        userPower++;
+    }
 }
-alert(0);
+alert(result);
