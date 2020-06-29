@@ -1,16 +1,14 @@
 'use strict';
 
-const userNumber = Number(prompt('Enter the number'));
-let userPower = Number(prompt('Enter the power'));
-let result = 1;
+const firstNumber = Number(prompt('Enter first number'));
+const secondNumber = Number(prompt('Enter second number'));
+let i = 1, result = 0;
 
-while (userPower) {
-    if (userPower > 0) {
-        result *= userNumber;
-        userPower--;
-    } else {
-        result /= userNumber;
-        userPower++;
+
+while (firstNumber >= i && secondNumber >= i) {
+    if (!(firstNumber % i) && !(secondNumber % i)) {
+        result++;
     }
+    i++;
 }
 alert(result);
