@@ -1,11 +1,10 @@
 'use strict';
 
-let number = 1000;
-let count = 0;
+const userNumber = Number(prompt('Enter the number'));
 
-do {
-    number /= 2;
-    count++;
+for (let i = userNumber; i <= 100; i += userNumber) {
+    if (!i) {
+        break;
+    }
+    document.write(`${i}\t`);
 }
-while (number >= 50);
-alert(`number = ${number}\ncount = ${count}`);
